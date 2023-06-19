@@ -2,10 +2,10 @@ import clsx from "clsx";
 import { PropsWithChildren } from "react";
 
 interface CardProps {
-  className: string;
+  className?: string;
 }
 
-const Card = ({ className, children }: PropsWithChildren<CardProps>) => {
+export const Card = ({ className, children }: PropsWithChildren<CardProps>) => {
   return (
     <div
       className={clsx(
@@ -17,5 +17,3 @@ const Card = ({ className, children }: PropsWithChildren<CardProps>) => {
     </div>
   );
 };
-
-export default Card;
